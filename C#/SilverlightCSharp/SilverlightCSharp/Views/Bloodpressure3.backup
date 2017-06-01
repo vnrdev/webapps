@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+   <Grid.Background>
+      <LinearGradientBrush>
+         <GradientStop Color="#FF93C5E8"/>
+         <GradientStop Color="#FF3B596E" Offset="1"/>
+      </LinearGradientBrush>
+   </Grid.Background>
+   <Grid.RowDefinitions>
+      <RowDefinition Height="6*"/>
+      <RowDefinition Height="6*"/>
+      <RowDefinition Height="6*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+   </Grid.RowDefinitions>
+   <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+   </Grid.ColumnDefinitions>
+   <Border Grid.Row="3" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="1" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="3" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="04.08.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="3" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="3" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="109" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="3" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="90" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="4" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="2" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="4" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="05.08.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="4" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="4" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="115" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="4" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="90" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="5" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="3" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="5" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="06.08.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="5" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="no" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="5" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="5" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="6" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="4" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="6" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="07.08.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="6" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="6" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="110" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="6" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="85" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="7" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="5" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="7" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="08.08.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="7" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="7" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="120" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="7" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="75" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="8" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="6" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="8" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="09.08.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="8" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="8" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="124" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="8" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="92" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="9" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="7" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="9" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="10.08.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="9" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="no" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="9" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="9" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="10" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="8" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="10" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="11.08.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="10" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="10" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="117" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="10" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="100" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="11" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="9" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="11" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="12.08.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="11" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="11" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="121" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="11" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="88" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="12" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="10" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="12" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="13.08.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="12" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="12" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="109" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="12" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="87" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="13" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="11" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="13" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="20.09.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="13" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="no" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="13" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="13" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="14" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="12" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="14" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="21.09.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="14" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="no" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="14" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="14" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="15" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="13" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="15" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="22.09.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="15" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="no" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="15" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="15" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="16" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="14" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="16" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="23.09.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="16" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="16" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="114" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="16" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="86" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="17" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="15" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="17" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="24.09.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="17" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="17" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="119" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="17" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="75" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="18" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="16" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="18" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="25.09.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="18" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="18" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="121" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="18" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="91" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="19" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="17" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="19" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="26.09.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="19" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="no" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="19" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="19" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="0" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="20" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="18" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="20" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="27.09.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="20" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="20" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="115" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="20" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="98" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="21" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="19" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="21" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="28.09.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="21" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="21" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="116" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="21" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="88" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="22" Grid.Column="0">
+      <TextBlock Foreground="Ivory" Text="20" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="22" Grid.Column="1">
+      <TextBlock Foreground="Ivory" Text="29.09.2012" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="22" Grid.Column="2">
+      <TextBlock Foreground="Ivory" Text="yes" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="22" Grid.Column="3">
+      <TextBlock Foreground="Ivory" Text="117" HorizontalAlignment="Center"/>
+   </Border>
+   <Border Grid.Row="22" Grid.Column="4">
+      <TextBlock Foreground="Ivory" Text="98" HorizontalAlignment="Center"/>
+   </Border>
+   <Button Grid.Row="3" Grid.Column="0">
+					"&gt; Systolic Limit: 110"
+				</Button>
+   <Button Grid.Row="3" Grid.Column="1" Content="&lt; Diastolic Limit: 90"/>
+   <Button Grid.Row="3" Grid.Column="2" Content=""/>
+   <Button Grid.Row="3" Grid.Column="3" Content="&lt; Average"/>
+   <Button Grid.Row="3" Grid.Column="4" Content="&gt; Average"/>
+   <Button Grid.Row="3" Grid.Column="5"/>
+</Grid>

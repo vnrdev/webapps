@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigation:Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 Title="Bloodpressure"
+                 x:Class="SilverlightCSharp.Bloodpressure"
+                 KeyDown="Page_KeyDown">
+   <Grid x:Name="grid1" ShowGridLines="True">
+      <Grid.Background>
+         <LinearGradientBrush>
+            <GradientStop Color="#FF93C5E8"/>
+            <GradientStop Color="#FF3B596E" Offset="1"/>
+         </LinearGradientBrush>
+      </Grid.Background>
+      <Grid.RowDefinitions>
+         <RowDefinition Height="1.38*"/>
+         <RowDefinition Height="1.38*"/>
+         <RowDefinition Height="1.38*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+         <ColumnDefinition Width="*"/>
+         <ColumnDefinition Width="*"/>
+         <ColumnDefinition Width="*"/>
+         <ColumnDefinition Width="*"/>
+         <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Border Grid.Column="1">
+         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Ivory"
+                    Text="Blood Pressure"/>
+      </Border>
+      <Border Grid.Column="3">
+         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Ivory"
+                    Text="Subject P001"/>
+      </Border>
+      <Border Grid.Row="3" Grid.Column="0">
+         <TextBlock x:Name="number1" Text="1" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="3" Grid.Column="1">
+         <TextBlock x:Name="date1" Text="04.08.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="3" Grid.Column="2">
+         <TextBlock x:Name="valid1" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="3" Grid.Column="3">
+         <TextBlock x:Name="systolic1" Tag="ltAvgValidSystolic1" Text="109" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="3" Grid.Column="4">
+         <TextBlock Tag="gtAvgValidDiastolic1" Text="90" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="4" Grid.Column="0">
+         <TextBlock x:Name="number2" Text="2" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="4" Grid.Column="1">
+         <TextBlock x:Name="date2" Text="05.08.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="4" Grid.Column="2">
+         <TextBlock x:Name="valid2" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="4" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit2" Tag="ltAvgValidSystolic2" Text="115"
+                    Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="4" Grid.Column="4">
+         <TextBlock Tag="gtAvgValidDiastolic2" Text="90" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="5" Grid.Column="0">
+         <TextBlock x:Name="number3" Text="3" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="5" Grid.Column="1">
+         <TextBlock x:Name="date3" Text="06.08.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="5" Grid.Column="2">
+         <TextBlock x:Name="notValid3" Text="no" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="5" Grid.Column="3">
+         <TextBlock x:Name="systolic3" Tag="ltAvgValidSystolic3" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="5" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit3" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="6" Grid.Column="0">
+         <TextBlock x:Name="number4" Text="4" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="6" Grid.Column="1">
+         <TextBlock x:Name="date4" Text="07.08.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="6" Grid.Column="2">
+         <TextBlock x:Name="valid4" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="6" Grid.Column="3">
+         <TextBlock x:Name="systolic4" Tag="ltAvgValidSystolic4" Text="110" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="6" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit4" Text="85" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="7" Grid.Column="0">
+         <TextBlock x:Name="number5" Text="5" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="7" Grid.Column="1">
+         <TextBlock x:Name="date5" Text="08.08.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="7" Grid.Column="2">
+         <TextBlock x:Name="valid5" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="7" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit5" Text="120" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="7" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit5" Text="75" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="8" Grid.Column="0">
+         <TextBlock x:Name="number6" Text="6" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="8" Grid.Column="1">
+         <TextBlock x:Name="date6" Text="09.08.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="8" Grid.Column="2">
+         <TextBlock x:Name="valid6" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="8" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit6" Text="124" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="8" Grid.Column="4">
+         <TextBlock Tag="gtAvgValidDiastolic6" Text="92" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="9" Grid.Column="0">
+         <TextBlock x:Name="number7" Text="7" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="9" Grid.Column="1">
+         <TextBlock x:Name="date7" Text="10.08.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="9" Grid.Column="2">
+         <TextBlock x:Name="notValid7" Text="no" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="9" Grid.Column="3">
+         <TextBlock x:Name="systolic7" Tag="ltAvgValidSystolic7" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="9" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit7" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="10" Grid.Column="0">
+         <TextBlock x:Name="number8" Text="8" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="10" Grid.Column="1">
+         <TextBlock x:Name="date8" Text="11.08.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="10" Grid.Column="2">
+         <TextBlock x:Name="valid8" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="10" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit8" Text="117" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="10" Grid.Column="4">
+         <TextBlock Tag="gtAvgValidDiastolic8" Text="100" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="11" Grid.Column="0">
+         <TextBlock x:Name="number9" Text="9" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="11" Grid.Column="1">
+         <TextBlock x:Name="date9" Text="12.08.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="11" Grid.Column="2">
+         <TextBlock x:Name="valid9" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="11" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit9" Text="121" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="11" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit9" Text="88" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="12" Grid.Column="0">
+         <TextBlock x:Name="number10" Text="10" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="12" Grid.Column="1">
+         <TextBlock x:Name="date10" Text="13.08.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="12" Grid.Column="2">
+         <TextBlock x:Name="valid10" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="12" Grid.Column="3">
+         <TextBlock x:Name="systolic10" Tag="ltAvgValidSystolic10" Text="109" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="12" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit10" Text="87" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="13" Grid.Column="0">
+         <TextBlock x:Name="number11" Text="11" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="13" Grid.Column="1">
+         <TextBlock x:Name="date11" Text="20.09.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="13" Grid.Column="2">
+         <TextBlock x:Name="notValid11" Text="no" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="13" Grid.Column="3">
+         <TextBlock x:Name="systolic11" Tag="ltAvgValidSystolic11" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="13" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit11" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="14" Grid.Column="0">
+         <TextBlock x:Name="number12" Text="12" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="14" Grid.Column="1">
+         <TextBlock x:Name="date12" Text="21.09.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="14" Grid.Column="2">
+         <TextBlock x:Name="notValid12" Text="no" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="14" Grid.Column="3">
+         <TextBlock x:Name="systolic12" Tag="ltAvgValidSystolic12" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="14" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit12" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="15" Grid.Column="0">
+         <TextBlock x:Name="number13" Text="13" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="15" Grid.Column="1">
+         <TextBlock x:Name="date13" Text="22.09.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="15" Grid.Column="2">
+         <TextBlock x:Name="notValid13" Text="no" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="15" Grid.Column="3">
+         <TextBlock x:Name="systolic13" Tag="ltAvgValidSystolic13" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="15" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit13" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="16" Grid.Column="0">
+         <TextBlock x:Name="number14" Text="14" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="16" Grid.Column="1">
+         <TextBlock x:Name="date14" Text="23.09.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="16" Grid.Column="2">
+         <TextBlock x:Name="valid14" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="16" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit14" Tag="ltAvgValidSystolic14" Text="114"
+                    Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="16" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit14" Text="86" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="17" Grid.Column="0">
+         <TextBlock x:Name="number15" Text="15" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="17" Grid.Column="1">
+         <TextBlock x:Name="date15" Text="24.09.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="17" Grid.Column="2">
+         <TextBlock x:Name="valid15" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="17" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit15" Text="119" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="17" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit15" Text="75" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="18" Grid.Column="0">
+         <TextBlock x:Name="number16" Text="16" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="18" Grid.Column="1">
+         <TextBlock x:Name="date16" Text="25.09.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="18" Grid.Column="2">
+         <TextBlock x:Name="valid16" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="18" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit16" Text="121" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="18" Grid.Column="4">
+         <TextBlock Tag="gtAvgValidDiastolic16" Text="91" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="19" Grid.Column="0">
+         <TextBlock x:Name="number17" Text="17" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="19" Grid.Column="1">
+         <TextBlock x:Name="date17" Text="26.09.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="19" Grid.Column="2">
+         <TextBlock x:Name="notValid17" Text="no" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="19" Grid.Column="3">
+         <TextBlock x:Name="systolic17" Tag="ltAvgValidSystolic17" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="19" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit17" Text="0" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="20" Grid.Column="0">
+         <TextBlock x:Name="number18" Text="18" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="20" Grid.Column="1">
+         <TextBlock x:Name="date18" Text="27.09.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="20" Grid.Column="2">
+         <TextBlock x:Name="valid18" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="20" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit18" Tag="ltAvgValidSystolic18" Text="115"
+                    Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="20" Grid.Column="4">
+         <TextBlock Tag="gtAvgValidDiastolic18" Text="98" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="21" Grid.Column="0">
+         <TextBlock x:Name="number19" Text="19" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="21" Grid.Column="1">
+         <TextBlock x:Name="date19" Text="28.09.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="21" Grid.Column="2">
+         <TextBlock x:Name="valid19" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="21" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit19" Text="116" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="21" Grid.Column="4">
+         <TextBlock x:Name="ltDiastolicLimit19" Text="88" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="22" Grid.Column="0">
+         <TextBlock x:Name="number20" Text="20" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="22" Grid.Column="1">
+         <TextBlock x:Name="date20" Text="29.09.2012" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="22" Grid.Column="2">
+         <TextBlock x:Name="valid20" Text="yes" Foreground="Ivory" HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="22" Grid.Column="3">
+         <TextBlock x:Name="gtSystolicLimit20" Text="117" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Border Grid.Row="22" Grid.Column="4">
+         <TextBlock Tag="gtAvgValidDiastolic20" Text="98" Foreground="Ivory"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+      </Border>
+      <Button VerticalAlignment="Center" Height="40" Grid.Row="1" Grid.Column="0"
+              x:Name="btnGtSystolicLimit"
+              Click="btnGtSystolicLimit_Click">&gt; Systolic Limit: 110</Button>
+      <Button VerticalAlignment="Center" Height="40" Grid.Row="1" Grid.Column="1"
+              x:Name="btnLtDiastolicLimit"
+              Click="btnLtDiastolicLimit_Click">&lt; Diastolic Limit : 90</Button>
+      <Button VerticalAlignment="Center" Height="40" Grid.Row="1" Grid.Column="2"
+              x:Name="btnValid"
+              Click="btnValid_Click">Invalid</Button>
+      <Button VerticalAlignment="Center" Height="40" Grid.Row="1" Grid.Column="3"
+              x:Name="btnLtAverage"
+              Click="btnLtAverage_Click">&lt; Average Systolic</Button>
+      <Button VerticalAlignment="Center" Height="40" Grid.Row="1" Grid.Column="4"
+              x:Name="btnGtAverage"
+              Click="btnGtAverage_Click">&gt; Average Diastolic</Button>
+      <Border Background="Maroon" Grid.Row="2" Grid.Column="0">
+         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Ivory">Number</TextBlock>
+      </Border>
+      <Border Background="Maroon" Grid.Row="2" Grid.Column="1">
+         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Ivory">Date</TextBlock>
+      </Border>
+      <Border Background="Maroon" Grid.Row="2" Grid.Column="2">
+         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Ivory">Valid</TextBlock>
+      </Border>
+      <Border Background="Maroon" Grid.Row="2" Grid.Column="3">
+         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Ivory">Systolic Blood Pressure</TextBlock>
+      </Border>
+      <Border Background="Maroon" Grid.Row="2" Grid.Column="4">
+         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Ivory">Diastolic Blood Pressure</TextBlock>
+      </Border>
+   </Grid>
+</navigation:Page>
