@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-resource.js"></script>
+</head>
+
+<body>
+
+    <div ng-app="todoApp" ng-controller="todoCtrl">
+        <div class="container">
+            <h2>Todo lists:</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody ng-switch="listsSaveMode.toString()">
+                    <tr ng-repeat="alist in mylists" ng-switch-default>
+                        <td>{{ alist.Id }}</td>
+                        <td>{{ alist.Title }}</td>
+                        <td><a ng-click="editList(alist,true)">Edit</a></td>
+                    <tr ng-switch-when="true">
+                        <td>{{ listsEditing.Id }}</td>
+                        <td><input type="text" ng-model="listsEditing.Title" /></td>
+                        <td><button class="btn btn-primary" ng-click="saveList(listsEditing)">save</button></td>
+                        <td><button class="btn btn-primary" ng-click="deleteList(listsEditing)">delete</button></td>
+                    </tr>                    
+                </tbody>
+            </table>
+            <div>
+                <h2>A single list:</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody ng-switch="listSaveMode.toString()">
+                        <tr ng-switch-default>
+                            <td>{{singlelist.Id}}</td>
+                            <td>{{singlelist.Title}}</td>
+                            <td><button class="btn btn-primary" ng-click="addList(singlelist)">Add</button></td>
+                            <td><a ng-click="editList(singlelist,false)">Edit</a></td>
+                        </tr>
+                        <tr ng-switch-when="true">
+                            <td>{{singlelist.Id}}</td>
+                            <td><input type="text" ng-model="singlelist.Title" /></td>
+                            <td><button class="btn btn-primary" ng-click="saveList(singlelist)">save</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Add a list:</h2>
+                <div>
+                    <input type="text" ng-model="listTitle" />
+                    <button class="btn btn-primary" ng-click="addList()">Add</button>
+                </div>
+
+                <h2>TodoList items by list:</h2>
+                <form>
+                    Specify list Id:<input ng-model="searchListId" ng-change="getTodosById()">
+                </form>
+                <table class="table">
+                    <thead ng-switch="saveMode.toString()">
+                        <tr ng-switch-default>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Content</th>
+                            <th>Done</th>
+                        </tr>
+                        <tr ng-switch-when="true">
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Content</th>
+                            <th>Done</th>
+                        </tr>
+                    </thead>
+                    <tbody ng-switch="saveMode.toString()">
+                        <tr ng-repeat="item in todosById" ng-switch-default>
+                            <td>{{ item.Id }}</td>
+                            <td>{{ item.Title }}</td>
+                            <td>{{ item.Content }}</td>
+                            <td><input type="checkbox" ng-checked="item.Done" ng-disabled="!saveMode" ng-click="toggleTodo(item)" /></td>
+                            <td><a ng-click="editTodo(item)">Edit</a></td>
+                        </tr>
+                        <tr ng-switch-when="true">
+                            <td>{{editing.Id}}</td>
+                            <td><input type="text" ng-model="editing.Title" /></td>
+                            <td><input type="text" ng-model="editing.Content" /></td>
+                            <td><input type="checkbox" ng-model="editing.Done" ng-checked="editing.Done" ng-click="toggleTodo(editing)" /></td>
+                            <td><button class="btn btn-primary" ng-click="saveTodo(editing)">save</button></td>
+                            <td><button class="btn btn-primary" ng-click="deleteTodo(editing)">delete</button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div>
+                    <input type="text" ng-model="todoTitle" />
+                    <input type="text" ng-model="todoContent" />
+                    <input type="checkbox" ng-model="todoDone" />
+                    <button class="btn btn-primary" ng-click="addTodo()">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var app = angular.module('todoApp', ['ngResource']);
+
+        app.controller('todoCtrl', [
+            '$scope', '$http', '$resource', function ($scope, $http, $resource) {
+
+                $http.get("http://localhost:32848/api/todolist")
+                    .then(function (response) {
+                        $scope.mylists = response.data;
+                    }, function (response) {
+                        $scope.mylists = "Something went wrong: " + response.statusText;
+                    });
+
+                var mylistsResource = $resource("http://localhost:32848/api/todolist", {},
+                {
+                    query: {
+                        method: 'GET',
+                        isArray: true
+                    }
+                });
+
+                var listById = $resource('http://localhost:32848/api/todolist/:id', { id: '@id' });
+                $scope.singlelist = listById.get({ id: 1 });
+
+                var todosById = $resource('http://localhost:32848/api/todoitem/itemsbylist/:id', {}, {
+                    query: {
+                        method: 'GET',
+                        params: { id: '@id' },
+                        isArray: true
+                    }
+                });
+
+                $scope.searchListId = 1;
+                $scope.todosById = todosById.query({ id: $scope.searchListId });
+
+                $scope.getTodosById = function () {
+                    $scope.todosById = todosById.query({ id: $scope.searchListId });
+                }
+
+                $scope.addTodo = function () {
+                    var todoItem = $resource('http://localhost:32848/api/todolist/:id/additem', { id: $scope.searchListId });
+                    todoItem.save(
+                    {
+                        title: $scope.todoTitle,
+                        content: $scope.todoContent,
+                        done: $scope.todoDone
+                    }, function (response) {
+                        $scope.message = response.message;
+                        $scope.todosById = todosById.query({ id: $scope.searchListId });
+                    });
+                }
+
+                $scope.editing = false;
+                $scope.saveMode = null;
+                $scope.editTodo = function (item) {
+                    $scope.saveMode = true;
+                    $scope.editing = item;
+                }
+
+                $scope.toggleTodo = function (item) {
+                    var toggledItem = $resource('http://localhost:32848/api/todoitem/:id/toggledone', {}, {
+                        query: {
+                            method: 'PUT',
+                            params: { id: item.Id },
+                            isArray: false
+                        }
+                    });
+                    toggledItem.query();
+                }
+
+                $scope.saveTodo = function (item) {
+                    var editedItem = $resource('http://localhost:32848/api/todoitem/:id', { id: item.Id }, {
+                        'update': { method: 'PUT' }
+                    });
+
+                    editedItem.update(
+                    {
+                        title: item.Title,
+                        content: item.Content,
+                        done: item.Done
+                    }, function (response) {
+                        $scope.message = response.message;
+                        $scope.saveMode = false;
+                    });
+                }
+
+                $scope.deleteTodo = function (item) {
+                    var deletedItem = $resource('http://localhost:32848/api/todoitem/:id', {});
+
+                    deletedItem.delete({ id: item.Id }, function () {
+                        $scope.todosById = todosById.query({ id: $scope.searchListId });
+                        $scope.saveMode = false;
+                    });
+                }
+
+                $scope.addList = function () {
+                    var addedList = $resource('http://localhost:32848/api/todolist', {});
+                    addedList.save(
+                    {
+                        title: $scope.listTitle
+                    }, function () {
+                        $scope.mylists = mylistsResource.query();
+                    });
+                }
+
+                $scope.listEditing = false;
+                $scope.listSaveMode = null;
+
+                $scope.listsEditing = false;
+                $scope.listsSaveMode = null;                
+
+                $scope.editList = function (list, multi) {
+                    if (multi === false) {
+                        $scope.listSaveMode = true;
+                        $scope.listEditing = list;
+                    } else {
+                        $scope.listsSaveMode = true;
+                        $scope.listsEditing = list;
+                    }
+                }
+
+                $scope.saveList = function (list) {
+                    var editedList = $resource('http://localhost:32848/api/todolist/:id', { id: list.Id }, {
+                        'update': { method: 'PUT' }
+                    });
+
+                    editedList.update(
+                    {
+                        title: list.Title
+                    }, function () {
+                        $scope.listSaveMode = false;
+                        $scope.listsSaveMode = false;
+                    });
+                }
+
+                $scope.deleteList = function (list) {
+                    var deletedList = $resource('http://localhost:32848/api/todolist/:id', {});
+
+                    deletedList.delete({ id: list.Id }, function () {                        
+                        $scope.mylists = mylistsResource.query();                        
+                        $scope.listsSaveMode = false;
+                    });
+                }
+
+
+//                var listIds = mylistsResource.get({
+//                    query: {
+//                        method: 'GET'                       ,
+//                        isArray: true
+//                    }
+//                });
+                //listIds.get
+
+//                $scope.moveItemToList = function(item, list)
+//                {
+//                    var movedItem = $resource('http://localhost:32848/api/todoitem/:id/movetolist/:listid', { id: item.Id, listid: list.Id });
+//                    movedItem.save(
+//                        {
+//                            listId: list.Id
+//                        }
+//                    );
+//                }
+
+            }
+        ]);
+    </script>
+
+</body>
+</html>
