@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" ShowGridLines="True">
+  <Grid.RowDefinitions>
+    <RowDefinition Height="20*" />
+    <RowDefinition Height="60*" />
+    <RowDefinition Height="20*" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="20*" />
+    <ColumnDefinition Width="60*" />
+    <ColumnDefinition Width="20*" />
+  </Grid.ColumnDefinitions>
+  <Grid.Background>
+    <LinearGradientBrush>
+      <GradientStop Color="#FF3B596E" />
+      <GradientStop Color="#FF93C5E8" Offset="1" />
+    </LinearGradientBrush>
+  </Grid.Background>
+  <Canvas Grid.Row="1" Grid.Column="1" x:Name="canvas" MouseLeftButtonUp="handleCanvas" Loaded="onLoaded">
+    <Canvas.Background>
+      <LinearGradientBrush>
+        <GradientStop Color="#FF93C5E8" />
+        <GradientStop Color="#FF3B596E" Offset="1" />
+      </LinearGradientBrush>
+    </Canvas.Background>
+    <TextBlock Foreground="Ivory" FontSize="16" Canvas.Left="369.68" Canvas.Top="22.29017076">Speed</TextBlock>
+    <Border Width="103.2" Canvas.Left="144.48000000000002" Canvas.Top="75.76162307999999" BorderThickness="2" BorderBrush="Red" Height="26.73572616">
+      <TextBlock Text="Sum 1-20" Foreground="Ivory" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <Border Width="103.2" Canvas.Left="340.56" Canvas.Top="75.76162307999999" BorderThickness="2" BorderBrush="Red" Height="26.73572616">
+      <TextBlock Text="Sum 21-40" Foreground="Ivory" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <Border Width="103.2" Canvas.Left="536.64" Canvas.Top="75.76162307999999" BorderThickness="2" BorderBrush="Red" Height="26.73572616">
+      <TextBlock Text="Sum 41-60" Foreground="Ivory" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+    <Line X1="77.44" Y1="154.9844" X2="712.24" Y2="154.9844" StrokeThickness="2" Stroke="Red" Tag="154.9844" x:Name="xAxisTop" />
+    <Line X1="77.44" Y1="382.9176" X2="712.24" Y2="382.9176" StrokeThickness="2" Stroke="Red" Tag="382.9176" x:Name="xAxisBottom" />
+    <Line X1="77.44" Y1="187.902" X2="712.24" Y2="187.902" StrokeThickness="1" Stroke="Red" />
+    <Line X1="77.44" Y1="219.81959999999998" X2="712.24" Y2="219.81959999999998" StrokeThickness="1" Stroke="Red" />
+    <Line X1="77.44" Y1="251.73719999999997" X2="712.24" Y2="251.73719999999997" StrokeThickness="1" Stroke="Red" />
+    <Line X1="77.44" Y1="283.65479999999997" X2="712.24" Y2="283.65479999999997" StrokeThickness="1" Stroke="Red" />
+    <Line X1="77.44" Y1="315.57239999999996" X2="712.24" Y2="315.57239999999996" StrokeThickness="1" Stroke="Red" />
+    <Line X1="77.44" Y1="347.48999999999995" X2="712.24" Y2="347.48999999999995" StrokeThickness="1" Stroke="Red" />
+    <Border Canvas.Left="36.16" Canvas.Top="148.42759999999998" Width="36.16" BorderThickness="1.0" BorderBrush="Red" HorizontalAlignment="Center">
+      <TextBlock Text="3500" Foreground="Ivory" HorizontalAlignment="Center" />
+    </Border>
+    <Border Canvas.Left="36.16" Canvas.Top="180.34519999999998" Width="36.16" BorderThickness="1.0" BorderBrush="Red" HorizontalAlignment="Center">
+      <TextBlock Text="3000" Foreground="Ivory" HorizontalAlignment="Center" />
+    </Border>
+    <Border Canvas.Left="36.16" Canvas.Top="212.26279999999997" Width="36.16" BorderThickness="1.0" BorderBrush="Red" HorizontalAlignment="Center">
+      <TextBlock Text="2500" Foreground="Ivory" HorizontalAlignment="Center" />
+    </Border>
+    <Border Canvas.Left="36.16" Canvas.Top="244.18039999999996" Width="36.16" BorderThickness="1.0" BorderBrush="Red" HorizontalAlignment="Center">
+      <TextBlock Text="2000" Foreground="Ivory" HorizontalAlignment="Center" />
+    </Border>
+    <Border Canvas.Left="36.16" Canvas.Top="276.09799999999996" Width="36.16" BorderThickness="1.0" BorderBrush="Red" HorizontalAlignment="Center">
+      <TextBlock Text="1500" Foreground="Ivory" HorizontalAlignment="Center" />
+    </Border>
+    <Border Canvas.Left="36.16" Canvas.Top="308.01559999999995" Width="36.16" BorderThickness="1.0" BorderBrush="Red" HorizontalAlignment="Center">
+      <TextBlock Text="1000" Foreground="Ivory" HorizontalAlignment="Center" />
+    </Border>
+    <Border Canvas.Left="36.16" Canvas.Top="339.93319999999994" Width="36.16" BorderThickness="1.0" BorderBrush="Red" HorizontalAlignment="Center">
+      <TextBlock Text="500" Foreground="Ivory" HorizontalAlignment="Center" />
+    </Border>
+    <Border Canvas.Left="36.16" Canvas.Top="371.85079999999994" Width="36.16" BorderThickness="1.0" BorderBrush="Red" HorizontalAlignment="Center">
+      <TextBlock Text="0" Foreground="Ivory" HorizontalAlignment="Center" />
+    </Border>
+    <TextBlock Text="Mean Reaction Time (correct responses)" Canvas.Left="112.00848400000001" Canvas.Top="406.740672" Foreground="Ivory" MouseLeftButtonUp="handleMeanCorrect" />
+    <TextBlock Text="Mean Reaction Time (incorrect responses)" Canvas.Left="112.00848400000001" Canvas.Top="428.011272" Foreground="Maroon" MouseLeftButtonUp="handleMeanIncorrect" />
+    <Ellipse x:Name="correctDot" Fill="White" Height="13.613183999999999" Width="13.613183999999999" Canvas.Left="87.76" Canvas.Top="408.096" Tag="0.06498377142857142" />
+    <Ellipse x:Name="ellipse2" Fill="Maroon" Height="13.613183999999999" Width="13.613183999999999" Canvas.Left="87.76" Canvas.Top="428.79654791999997" />
+    <TextBlock Text="Standard Deviation" Canvas.Left="516.16" Canvas.Top="411.27556391999997" Foreground="Ivory" />
+    <Line X1="480.0" Y1="411.27556391999997" X2="495.52" Y2="411.27556391999997" StrokeThickness="2" Stroke="Ivory" />
+    <Line X1="487.76" Y1="411.27556391999997" X2="487.76" Y2="443.18146391999994" StrokeThickness="2" Stroke="Ivory" />
+    <Line X1="480.0" Y1="443.18146391999994" X2="495.52" Y2="443.18146391999994" StrokeThickness="2" Stroke="Ivory" />
+    <Canvas x:Name="correct0" Visibility="Collapsed">
+      <Line X1="149.68" Y1="285.44194285714286" X2="165.20000000000002" Y2="285.44194285714286" StrokeThickness="1" Stroke="Ivory" Tag="1200" x:Name="correcteMetingen0" />
+      <Line X1="157.44" Y1="285.44194285714286" X2="157.44" Y2="324.4322057142857" StrokeThickness="1" Stroke="Ivory" Tag="300" x:Name="correcteMetingenStd0" />
+      <Line X1="149.68" Y1="324.4322057142857" X2="165.20000000000002" Y2="324.4322057142857" StrokeThickness="1" Stroke="Ivory" />
+      <Ellipse Fill="Ivory" Height="15.52" Width="15.52" Canvas.Left="149.68" Canvas.Top="297.1770742857143" />
+    </Canvas>
+    <Canvas x:Name="correct1" Visibility="Collapsed">
+      <Line X1="350.96000000000004" Y1="259.44843428571426" X2="366.48" Y2="259.44843428571426" StrokeThickness="1" Stroke="Ivory" Tag="1400" x:Name="correcteMetingen1" />
+      <Line X1="358.72" Y1="259.44843428571426" X2="358.72" Y2="324.4322057142857" StrokeThickness="1" Stroke="Ivory" Tag="500" x:Name="correcteMetingenStd1" />
+      <Line X1="350.96000000000004" Y1="324.4322057142857" X2="366.48" Y2="324.4322057142857" StrokeThickness="1" Stroke="Ivory" />
+      <Ellipse Fill="Ivory" Height="15.52" Width="15.52" Canvas.Left="350.96000000000004" Canvas.Top="284.18032" />
+    </Canvas>
+    <Canvas x:Name="correct2" Visibility="Collapsed">
+      <Line X1="547.04" Y1="220.45817142857143" X2="562.56" Y2="220.45817142857143" StrokeThickness="1" Stroke="Ivory" Tag="2100" x:Name="correcteMetingen2" />
+      <Line X1="554.8" Y1="220.45817142857143" X2="554.8" Y2="272.44518857142856" StrokeThickness="1" Stroke="Ivory" Tag="400" x:Name="correcteMetingenStd2" />
+      <Line X1="547.04" Y1="272.44518857142856" X2="562.56" Y2="272.44518857142856" StrokeThickness="1" Stroke="Ivory" />
+      <Ellipse Fill="Ivory" Height="15.52" Width="15.52" Canvas.Left="547.04" Canvas.Top="238.69168000000002" />
+    </Canvas>
+    <Canvas x:Name="incorrect0" Visibility="Collapsed">
+      <Line X1="216.8" Y1="174.96953142857146" X2="232.32000000000002" Y2="174.96953142857146" StrokeThickness="1" Stroke="Maroon" Tag="3000" x:Name="incorrecteMetingen0" />
+      <Line X1="224.56" Y1="174.96953142857146" X2="224.56" Y2="200.96304000000003" StrokeThickness="1" Stroke="Maroon" Tag="200" x:Name="incorrecteMetingenStd0" />
+      <Line X1="216.8" Y1="200.96304000000003" X2="232.32000000000002" Y2="200.96304000000003" StrokeThickness="1" Stroke="Maroon" />
+      <Ellipse Fill="Maroon" Height="15.52" Width="15.52" Canvas.Left="216.8" Canvas.Top="180.20628571428574" />
+    </Canvas>
+    <Canvas x:Name="incorrect1" Visibility="Collapsed">
+      <Line X1="402.71999999999997" Y1="165.22196571428572" X2="418.23999999999995" Y2="165.22196571428572" StrokeThickness="1" Stroke="Maroon" Tag="3100" x:Name="incorrecteMetingen1" />
+      <Line X1="410.47999999999996" Y1="165.22196571428572" X2="410.47999999999996" Y2="197.71385142857145" StrokeThickness="1" Stroke="Maroon" Tag="250" x:Name="incorrecteMetingenStd1" />
+      <Line X1="402.71999999999997" Y1="197.71385142857145" X2="418.23999999999995" Y2="197.71385142857145" StrokeThickness="1" Stroke="Maroon" />
+      <Ellipse Fill="Maroon" Height="15.52" Width="15.52" Canvas.Left="402.71999999999997" Canvas.Top="173.7079085714286" />
+    </Canvas>
+    <Canvas x:Name="incorrect2" Visibility="Collapsed">
+      <Line X1="588.6400000000001" Y1="171.72034285714287" X2="604.1600000000001" Y2="171.72034285714287" StrokeThickness="1" Stroke="Maroon" Tag="2800" x:Name="incorrecteMetingen2" />
+      <Line X1="596.4000000000001" Y1="171.72034285714287" X2="596.4000000000001" Y2="230.20573714285715" StrokeThickness="1" Stroke="Maroon" Tag="450" x:Name="incorrecteMetingenStd2" />
+      <Line X1="588.6400000000001" Y1="230.20573714285715" X2="604.1600000000001" Y2="230.20573714285715" StrokeThickness="1" Stroke="Maroon" />
+      <Ellipse Fill="Maroon" Height="15.52" Width="15.52" Canvas.Left="588.6400000000001" Canvas.Top="193.20304000000002" />
+    </Canvas>
+  </Canvas>
+</Grid>
+
