@@ -1,3 +1,6 @@
+Vereisten voor applicatie:
+- dient te draaien in Internet Explorer Quirks mode (F12): Internet Explorer 7 (Emulation)
+
 Dit is een statistische UI dat gebruik maakt van XML als flat file databank.
 De UI werd manueel uitgedacht en uitgetekend met pure Javascript.
 
