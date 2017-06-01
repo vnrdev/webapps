@@ -1,0 +1,18 @@
+{
+  "id": 27,
+  "verdieping": 4,
+  "naam": "GR403",
+  "type": "studielandschap",
+  "omschrijving": "",
+  "capaciteit": 52,
+  "beamerAanwezig": false,
+  "Acties": {
+    "datumAanmaak": "03-02-2014",
+    "type": "beamer",
+    "omschrijving": "",
+    "prioriteit": "medium",
+    "deadline": "02-11-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "08-02-2014"
+  }
+}

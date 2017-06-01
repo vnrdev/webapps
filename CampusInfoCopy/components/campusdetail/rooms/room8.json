@@ -1,0 +1,18 @@
+{
+  "id": 8,
+  "verdieping": 1,
+  "naam": "GR102",
+  "type": "studielandschap",
+  "omschrijving": "",
+  "capaciteit": 15,
+  "beamerAanwezig": false,
+  "Acties": {
+    "datumAanmaak": "04-02-2014",
+    "type": "stroom",
+    "omschrijving": "",
+    "prioriteit": "hoog",
+    "deadline": "02-08-2014",
+    "uitgevoerd": false,
+    "datumUitgevoerd": "18-02-2014"
+  }
+}

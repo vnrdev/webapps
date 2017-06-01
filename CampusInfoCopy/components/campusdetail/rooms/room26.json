@@ -1,0 +1,18 @@
+{
+  "id": 26,
+  "verdieping": 4,
+  "naam": "GR402",
+  "type": "cafetaria",
+  "omschrijving": "",
+  "capaciteit": 40,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "02-02-2014",
+    "type": "audio",
+    "omschrijving": "",
+    "prioriteit": "medium",
+    "deadline": "17-09-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "17-02-2014"
+  }
+}

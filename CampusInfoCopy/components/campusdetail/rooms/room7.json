@@ -1,0 +1,18 @@
+{
+  "id": 7,
+  "verdieping": 1,
+  "naam": "GR101",
+  "type": "bureau",
+  "omschrijving": "",
+  "capaciteit": 45,
+  "beamerAanwezig": false,
+  "Acties": {
+    "datumAanmaak": "03-02-2014",
+    "type": "audio",
+    "omschrijving": "",
+    "prioriteit": "medium",
+    "deadline": "14-05-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "08-02-2014"
+  }
+}

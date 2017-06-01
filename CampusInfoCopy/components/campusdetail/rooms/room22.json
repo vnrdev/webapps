@@ -1,0 +1,18 @@
+{
+  "id": 22,
+  "verdieping": 3,
+  "naam": "GR304",
+  "type": "vergaderzaal",
+  "omschrijving": "",
+  "capaciteit": 33,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "05-02-2014",
+    "type": "zonnewering",
+    "omschrijving": "",
+    "prioriteit": "hoog",
+    "deadline": "15-11-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "13-02-2014"
+  }
+}

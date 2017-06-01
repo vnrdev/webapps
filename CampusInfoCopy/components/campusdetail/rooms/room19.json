@@ -1,0 +1,18 @@
+{
+  "id": 19,
+  "verdieping": 3,
+  "naam": "GR301",
+  "type": "bureau",
+  "omschrijving": "",
+  "capaciteit": 79,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "05-02-2014",
+    "type": "stroom",
+    "omschrijving": "",
+    "prioriteit": "laag",
+    "deadline": "02-05-2014",
+    "uitgevoerd": false,
+    "datumUitgevoerd": "19-02-2014"
+  }
+}

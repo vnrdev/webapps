@@ -1,0 +1,18 @@
+{
+  "id": 5,
+  "verdieping": 0,
+  "naam": "GR005",
+  "type": "aula",
+  "omschrijving": "",
+  "capaciteit": 75,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "05-02-2014",
+    "type": "schoonmaak",
+    "omschrijving": "",
+    "prioriteit": "laag",
+    "deadline": "28-08-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "14-02-2014"
+  }
+}

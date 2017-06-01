@@ -1,0 +1,18 @@
+{
+  "id": 6,
+  "verdieping": 0,
+  "naam": "GR006",
+  "type": "klaslokaal",
+  "omschrijving": "",
+  "capaciteit": 20,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "02-02-2014",
+    "type": "bord",
+    "omschrijving": "",
+    "prioriteit": "medium",
+    "deadline": "16-06-2014",
+    "uitgevoerd": false,
+    "datumUitgevoerd": "08-02-2014"
+  }
+}

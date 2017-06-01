@@ -1,0 +1,18 @@
+{
+  "id": 24,
+  "verdieping": 3,
+  "naam": "GR306",
+  "type": "vergaderzaal",
+  "omschrijving": "",
+  "capaciteit": 67,
+  "beamerAanwezig": false,
+  "Acties": {
+    "datumAanmaak": "03-02-2014",
+    "type": "audio",
+    "omschrijving": "",
+    "prioriteit": "laag",
+    "deadline": "04-03-2014",
+    "uitgevoerd": false,
+    "datumUitgevoerd": "12-02-2014"
+  }
+}

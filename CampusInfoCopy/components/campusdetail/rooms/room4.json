@@ -1,0 +1,18 @@
+{
+  "id": 4,
+  "verdieping": 0,
+  "naam": "GR004",
+  "type": "cafetaria",
+  "omschrijving": "",
+  "capaciteit": 15,
+  "beamerAanwezig": false,
+  "Acties": {
+    "datumAanmaak": "04-02-2014",
+    "type": "audio",
+    "omschrijving": "",
+    "prioriteit": "hoog",
+    "deadline": "26-02-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "19-02-2014"
+  }
+}

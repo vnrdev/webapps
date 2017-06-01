@@ -1,0 +1,18 @@
+{
+  "id": 3,
+  "verdieping": 0,
+  "naam": "GR003",
+  "type": "vergaderzaal",
+  "omschrijving": "",
+  "capaciteit": 63,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "03-02-2014",
+    "type": "banken",
+    "omschrijving": "",
+    "prioriteit": "hoog",
+    "deadline": "04-01-2015",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "09-02-2014"
+  }
+}

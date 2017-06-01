@@ -1,0 +1,78 @@
+<!--
+     User Interfaces 3
+     Academiejaar 2014-2015 -->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="campusInfoApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- scope needed -->
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ======================================= Defaults ======================================= ->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/libs/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- ================== jQuery (necessary for Bootstrap's JavaScript plugins)================== -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- ======================================= Bootstrap ======================================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- ======================================= Angular ======================================= -->
+    <script src="assets/libs/angularjs/1.2.13_angular.js"></script>
+    <script src="assets/libs/angularjs/1.2.13_angular-route.js"></script>
+    <script src="assets/libs/angularjs/1.2.13_angular-resource.js"></script>
+    <script src="assets/libs/angularjs/1.2.13_angular-animate.js"></script>
+
+    <script src="assets/libs/angularUI/ui_utils/ui-utils-0.2.1/ui-utils.js"></script>
+    <script src="assets/libs/angularFilter/angular-filter-master/angular-filter.js"></script>
+    <script src="assets/libs/angularTranslate/angular-translate.js"></script>
+
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body ng-style="mystyle">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Sidebar content 143,216,216-->
+                <button type="button" ng-click="mystyle={'background-color':'blue','color':'rgba(102,204,204,20'}" class="btn btn-default">
+                    <span class="glyphicon glyphicon-adjust"></span>
+                </button>
+                <button type="button" ng-click="mystyle={'background-color':'rgba(204,220,193,30)','color':'rgb(50,201,205'}" class="btn btn-default">
+                    <span class="glyphicon glyphicon-adjust"></span>
+                </button>
+            </div>
+            <div class="col-md-10">
+                <div class="view-container">
+                    <div ng-view class="view-frame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ======================================= App ======================================= -->
+<script src="app.js"></script>
+<script src="components/campuslijst/campusLijstController.js"></script>
+<script src="components/campusdetail/campusDetailController.js"></script>
+<script src="components/filters.js"></script>
+<script src="components/campusService.js"></script>
+<script src="components/EigenschappenService.js"></script>
+
+<script src="components/angularTranslate.js"></script>
+
+
+
+</body>
+
+</html>

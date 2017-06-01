@@ -1,0 +1,18 @@
+{
+  "id": 31,
+  "verdieping": 5,
+  "naam": "GR501",
+  "type": "ander",
+  "omschrijving": "",
+  "capaciteit": 65,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "02-02-2014",
+    "type": "stroom",
+    "omschrijving": "",
+    "prioriteit": "laag",
+    "deadline": "16-03-2014",
+    "uitgevoerd": false,
+    "datumUitgevoerd": "07-02-2014"
+  }
+}

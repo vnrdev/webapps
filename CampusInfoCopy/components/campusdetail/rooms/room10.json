@@ -1,0 +1,18 @@
+{
+  "id": 10,
+  "verdieping": 1,
+  "naam": "GR104",
+  "type": "vergaderzaal",
+  "omschrijving": "",
+  "capaciteit": 54,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "05-02-2014",
+    "type": "stroom",
+    "omschrijving": "",
+    "prioriteit": "laag",
+    "deadline": "28-07-2014",
+    "uitgevoerd": false,
+    "datumUitgevoerd": "07-02-2014"
+  }
+}

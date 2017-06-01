@@ -1,0 +1,18 @@
+{
+  "id": 13,
+  "verdieping": 2,
+  "naam": "GR201",
+  "type": "bureau",
+  "omschrijving": "",
+  "capaciteit": 29,
+  "beamerAanwezig": false,
+  "Acties": {
+    "datumAanmaak": "04-02-2014",
+    "type": "audio",
+    "omschrijving": "",
+    "prioriteit": "hoog",
+    "deadline": "25-09-2014",
+    "uitgevoerd": false,
+    "datumUitgevoerd": "11-02-2014"
+  }
+}

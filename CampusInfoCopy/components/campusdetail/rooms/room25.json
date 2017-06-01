@@ -1,0 +1,18 @@
+{
+  "id": 25,
+  "verdieping": 4,
+  "naam": "GR401",
+  "type": "klaslokaal",
+  "omschrijving": "",
+  "capaciteit": 18,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "04-02-2014",
+    "type": "beamer",
+    "omschrijving": "",
+    "prioriteit": "hoog",
+    "deadline": "15-03-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "16-02-2014"
+  }
+}

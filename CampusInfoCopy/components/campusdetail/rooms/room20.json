@@ -1,0 +1,18 @@
+{
+  "id": 20,
+  "verdieping": 3,
+  "naam": "GR302",
+  "type": "cafetaria",
+  "omschrijving": "",
+  "capaciteit": 25,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "04-02-2014",
+    "type": "bord",
+    "omschrijving": "",
+    "prioriteit": "medium",
+    "deadline": "23-07-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "17-02-2014"
+  }
+}

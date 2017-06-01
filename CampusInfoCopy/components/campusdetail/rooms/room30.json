@@ -1,0 +1,18 @@
+{
+  "id": 30,
+  "verdieping": 4,
+  "naam": "GR406",
+  "type": "sanitair",
+  "omschrijving": "",
+  "capaciteit": 11,
+  "beamerAanwezig": false,
+  "Acties": {
+    "datumAanmaak": "01-02-2014",
+    "type": "audio",
+    "omschrijving": "",
+    "prioriteit": "medium",
+    "deadline": "15-11-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "13-02-2014"
+  }
+}

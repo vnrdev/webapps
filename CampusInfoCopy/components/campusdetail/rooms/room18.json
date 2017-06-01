@@ -1,0 +1,18 @@
+{
+  "id": 18,
+  "verdieping": 2,
+  "naam": "GR206",
+  "type": "vergaderzaal",
+  "omschrijving": "",
+  "capaciteit": 35,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "03-02-2014",
+    "type": "schoonmaak",
+    "omschrijving": "",
+    "prioriteit": "medium",
+    "deadline": "01-07-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "09-02-2014"
+  }
+}

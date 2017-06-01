@@ -1,0 +1,18 @@
+{
+  "id": 29,
+  "verdieping": 4,
+  "naam": "GR405",
+  "type": "aula",
+  "omschrijving": "",
+  "capaciteit": 21,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "02-02-2014",
+    "type": "ander",
+    "omschrijving": "",
+    "prioriteit": "hoog",
+    "deadline": "16-08-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "16-02-2014"
+  }
+}

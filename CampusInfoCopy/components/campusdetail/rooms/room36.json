@@ -1,0 +1,18 @@
+{
+  "id": 36,
+  "verdieping": 5,
+  "naam": "GR506",
+  "type": "cafetaria",
+  "omschrijving": "",
+  "capaciteit": 45,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "03-02-2014",
+    "type": "banken",
+    "omschrijving": "",
+    "prioriteit": "medium",
+    "deadline": "22-10-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "09-02-2014"
+  }
+}

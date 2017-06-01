@@ -1,0 +1,18 @@
+{
+  "id": 15,
+  "verdieping": 2,
+  "naam": "GR203",
+  "type": "studielandschap",
+  "omschrijving": "",
+  "capaciteit": 95,
+  "beamerAanwezig": true,
+  "Acties": {
+    "datumAanmaak": "02-02-2014",
+    "type": "bord",
+    "omschrijving": "",
+    "prioriteit": "hoog",
+    "deadline": "07-12-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "06-02-2014"
+  }
+}

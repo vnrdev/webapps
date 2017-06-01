@@ -1,0 +1,35 @@
+<!--
+     User Interfaces 3
+     Academiejaar 2014-2015 -->
+
+<div class="col-md-3">
+    <label for="eigenschappen">Eigenschappen:</label>
+    <ul id="eigenschappen">
+        <li>ID: {{room.id}}</li>
+        <li>Verdieping: {{room.verdieping}}</li>
+        <li>Naam: {{room.naam}}</li>
+        <li>Type: {{room.type}}</li>
+        <li>Omschrijving: {{room.omschrijving}}</li>
+        <li>Capaciteit: {{room.capaciteit}}</li>
+        <li>Beamer aanwezig: {{room.beamerAanwezig}}</li>
+    </ul>
+</div>
+
+<div class="col-md-3">
+    <label for="acties">Acties:</label>
+    <ul id="acties">
+        <li>type: {{room.Acties.type}}</li>
+        <li>datum aanmaak: {{room.Acties.datumAanmaak}}</li>
+        <li>omschrijving: {{room.Acties.omschrijving}}</li>
+        <li>prioriteit: {{room.Acties.prioriteit}}</li>
+        <li>deadline: {{room.Acties.deadline}}</li>
+        <li>uitgevoerd: {{room.Acties.uitgevoerd}}</li>
+        <li>datum uitgevoerd: {{room.Acties.datumUitgevoerd}}</li>
+    </ul>
+</div>
+<!-- Alternatieve syntax
+<ul>Acties:
+    <li ng-repeat="actie in room.Acties">
+        {{actie}}
+    </li>
+</ul>-->

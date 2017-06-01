@@ -1,0 +1,172 @@
+<!--
+     User Interfaces 3
+     Academiejaar 2014-2015 -->
+
+<section id="container" class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- room list -->
+            <section id="room-display">
+                <div class="blok">
+                    <label for="verdieping">kies uw verdieping:</label>
+                    <select id="verdieping" ng-model="verdiepingsno" class="btn btn-primary">
+                        <option ng-repeat="room in rooms | unique:verdieping1" value="{{room.verdieping}}">verdieping
+                            {{room.verdieping}}
+                        </option>
+                    </select>
+                </div>
+
+                <ul ng-class="{'grid': 'grid', 'list': 'list'}[layout]">
+                    <li ng-repeat="room in rooms | where:{verdieping: verdiepingsno}" class="thumbnail animation">
+                        <div ng-show="naam"><a href="#/campus/rooms/room{{room.id}}">{{room.naam}}</a></div>
+                        <div ng-show="capaciteit">{{room.capaciteit}}</div>
+                        <div ng-show="lokaaltype">{{room.type}}</div>
+                        <div ng-show="omschrijving">{{room.omschrijving}}</div>
+                        <!--<div ng-show="beameraanwezig" ng-class="{'true':'glyphicon glyphicon-facetime-video'}[room.beamerAanwezig]">{{room.beamerAanwezig | checkmark}}</div>-->
+                        <div ng-show="beameraanwezig" ng-class="{'true':'belangrijk'}"[beameraanwezigbelangrijk]>{{room.beamerAanwezig | checkmark}}</div>
+
+                        <select ng-show="acties" ng-repeat="room in rooms | where:{id:room.id}"
+                                ng-class="{'hoog':'blue'}[room.Acties.prioriteit]" ng-style="actiesstyle">
+                            <!--<div ng-repeat="actie in room.Acties">
+                                {{actie}}-->
+                            <option id="actie">type: {{room.Acties.type}}</option>
+                            <option>datum aanmaak: {{room.Acties.datumAanmaak}}</option>
+                            <option>omschrijving: {{room.Acties.omschrijving}}</option>
+                            <option>prioriteit: {{room.Acties.prioriteit}}</option>
+                            <option>deadline: {{room.Acties.deadline}}</option>
+                            <option>uitgevoerd: {{room.Acties.uitgevoerd}}</option>
+                            <option>datum uitgevoerd: {{room.Acties.datumUitgevoerd}}</option>
+
+                        </select>
+                        <button ng-click="toonActiePaneel()">voeg actie toe</button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="col-md-5">
+            <!-- Filterpaneel -->
+            <secion id="filter-paneel">
+                <div ng-controller="AngularTranslateController">
+                <button class="btn ng-scope" ng-click="changeLanguage('nl')" translate="TITLE">Hello</button>
+                    <h1>{{ 'TITLE' | translate }}</h1>
+                    <p>{{ 'FOO' | translate }}</p>
+                </div>
+                <label for="filterform">Filterpaneel:</label>
+
+                <form role="form" id="filterform">
+
+                    <button type="button" ng-click="layout = 'list'" ng-model="layout" class="btn btn-default">
+                        <span class="glyphicon glyphicon-list"></span>
+                    </button>
+                    <button type="button" ng-click="layout = 'grid'" ng-model="layout" class="btn btn-default">
+                        <span class="glyphicon glyphicon-th-large"></span>
+                    </button>
+                    <!--Alternatieve implementatie
+                    <select id="layout" ng-click="setLayout()" ng-model="layout">
+                        <option value="list">Lijst</option>
+                        <option value="grid">Plattegrond</option>
+                    </select>-->
+
+                    <form role="form">
+                        <div class="checkbox">
+                            <label><input type="checkbox" ng-checked="lokaaltype" ng-change="setLokaalType()"
+                                          ng-model="lokaaltype">Type</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" ng-checked="lokaaltypebelangrijk" ng-change="setLokaalType()"
+                                          ng-model="lokaaltypebelangrijk">belangrijk</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <label><input type="checkbox" ng-checked="omschrijving" ng-change="setOmschrijving()"
+                                          ng-model="omschrijving">Omschrijving</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" ng-checked="omschrijvingbelangrijk" ng-change="setOmschrijving()"
+                                          ng-model="omschrijvingbelangrijk">belangrijk</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <label><input type="checkbox" ng-checked="capaciteit" ng-change="setCapaciteit()"
+                                          ng-model="capaciteit">Capaciteit</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" ng-checked="capaciteitbelangrijk" ng-change="setCapaciteit()"
+                                          ng-model="capaciteitbelangrijk">belangrijk</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <label><input type="checkbox" ng-checked="beameraanwezig" ng-change="setBeamerAanwezig()"
+                                          ng-model="beameraanwezig">Beamer aanwezig</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" ng-checked="beameraanwezigbelangrijk" ng-change="setBeamerAanwezig()"
+                                          ng-model="beameraanwezigbelangrijk">belangrijk</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" ng-checked="acties" ng-change="setActies()" ng-model="acties">Acties</label>
+                        </div>
+                    </form>
+                </form>
+            </secion>
+
+            <section id="actie-toevoegen" ng-hide="actie">
+                <form>
+                    <fieldset>
+                        <legend>Actie toevoegen</legend>
+                        <div class="form-group">
+                            <label for="datum">Datum aanmaak:</label>
+                            <input type="text" class="form-control" id="datum" placeholder="Datum aanmaak">
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Actietype:</label>
+                            <select id="type" class="btn btn-primary">
+                                <option>beamer</option>
+                                <option>bord</option>
+                                <option>stroom</option>
+                                <option>audio</option>
+                                <option>zonnewering</option>
+                                <option>banken</option>
+                                <option>schoonmaak</option>
+                                <option>ander</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="omschrijving">Omschrijving:</label>
+                            <input type="text" class="form-control" id="omschrijving" placeholder="Omschrijving">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="prioriteit">Prioriteit:</label>
+                            <select id="prioriteit" class="btn btn-primary">
+                                <option>laag</option>
+                                <option>medium</option>
+                                <option>hoog</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="datum">Deadline:</label>
+                            <input type="text" class="form-control" id="deadline" placeholder="Deadline">
+                        </div>
+
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Uitgevoerd</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="datum-uitgevoerd">Datum uitgevoerd:</label>
+                            <input type="text" class="form-control" id="datum-uitgevoerd"
+                                   placeholder="Datum uitgevoerd">
+                        </div>
+
+                        <button type="submit" class="btn btn-success" ng-click="addRoom()">Voeg toe</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+    </div>
+
+</section>

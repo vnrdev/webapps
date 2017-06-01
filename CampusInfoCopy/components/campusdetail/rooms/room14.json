@@ -1,0 +1,18 @@
+{
+  "id": 14,
+  "verdieping": 2,
+  "naam": "GR202",
+  "type": "vergaderzaal",
+  "omschrijving": "",
+  "capaciteit": 93,
+  "beamerAanwezig": false,
+  "Acties": {
+    "datumAanmaak": "04-02-2014",
+    "type": "banken",
+    "omschrijving": "",
+    "prioriteit": "laag",
+    "deadline": "31-10-2014",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "15-02-2014"
+  }
+}

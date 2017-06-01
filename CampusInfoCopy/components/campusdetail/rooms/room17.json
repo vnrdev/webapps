@@ -1,0 +1,18 @@
+{
+  "id": 17,
+  "verdieping": 2,
+  "naam": "GR205",
+  "type": "klaslokaal",
+  "omschrijving": "",
+  "capaciteit": 44,
+  "beamerAanwezig": false,
+  "Acties": {
+    "datumAanmaak": "04-02-2014",
+    "type": "schoonmaak",
+    "omschrijving": "",
+    "prioriteit": "laag",
+    "deadline": "03-01-2015",
+    "uitgevoerd": true,
+    "datumUitgevoerd": "08-02-2014"
+  }
+}
