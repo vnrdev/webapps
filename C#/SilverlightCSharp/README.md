@@ -8,3 +8,5 @@ Relevante code:
 
 - SilverlightCSharp\Views
 
+Dit project maakt gebruik van het bijbehorend XSL project.
+
