@@ -1,12 +1,11 @@
 Applicatievereisten:
-
+Application requirements:
 - Silverlight Developer Runtime
 
-Dit is een Silverlight C# applicatie dat gebruik maakt van XSL en XML om data visueel weer te geven.
+This is a Silverlight C# application using XSL and XML to display data visually.
 
-Relevante code:
-
+Applicable code:
 - SilverlightCSharp\Views
+It uses the adjacent [XSL project](../Xsl).
 
-Dit project maakt gebruik van het bijbehorend XSL project.
 
