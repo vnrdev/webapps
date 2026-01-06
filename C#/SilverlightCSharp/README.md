@@ -5,6 +5,7 @@ Applicable code:
 It uses the adjacent [XSL project](/Xsl).
 
 Application requirements:
+- Visual Studio 2010
 - Silverlight Developer Runtime
 
 
