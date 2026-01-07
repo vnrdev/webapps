@@ -28,7 +28,7 @@ You can choose between the two views: Accuracy or Speed.
 ### Speed view 
 
 - Click precisely on the white text 'Mean Reaction Time'
-- Click precisely on the maroon text 'Mean REaction Time' 
+- Click precisely on the maroon text 'Mean Reaction Time' 
   You are then able to see the data points (bulletpoints)
   - Click once more on hte text and you will see a JavaScript animation where the data points move between two limits
 
