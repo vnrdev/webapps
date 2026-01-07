@@ -1,6 +1,6 @@
 # Campus Info
 
-Logistics application to book and manage classrooms. 
+AngularJS Logistics application to book and manage classrooms. 
 
 ![demo](screenshots/demo.gif)
 
