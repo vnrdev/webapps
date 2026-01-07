@@ -12,7 +12,7 @@ Question type: checklist (tablet)
 Question type: date
 ![question_date](Screenshots/question_date.png)
 
-Question type: free text
+Question type: free text (mobile)
 ![question_freetext](Screenshots/question_freetext.png)
 
 Question type: question list
