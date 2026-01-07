@@ -1,12 +1,14 @@
-Dit is een eenvoudige TodoApp.
+# Todo App
 
-Gebruikte technologieën:
+This is a simple AngularJS Todo app.
+
+### Stack
 - AngularJS
 - Entity Framework
 - WebApi
 - Ninject
 
-Patterns
+### Patterns
 - Repository Pattern
 - Inversion of Control
 - Dependency Injection
