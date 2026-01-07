@@ -1,6 +1,8 @@
+# Bloodpressure
+
 This is a Silverlight C# application using XSL and XML to display bloodpressure data visually.
 
-#Use cases
+## Use cases
 
 On mouseclick:
 
@@ -16,13 +18,13 @@ Accuracy use case 3: toggle series legends
 ![Accuracy use case 3: toggle series legends](/Xsl/Screenshots/Accuracy%20uc3.gif)
 
 
-Views:
+### Views
 - SilverlightCSharp\Views
 
-Dependencies: 
+### Dependencies 
 [XSL project](/Xsl).
 
-Application requirements:
+### Application requirements:
 - Visual Studio 2010
 - Silverlight Developer Runtime
 
