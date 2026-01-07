@@ -1,8 +1,17 @@
-This is a Silverlight C# application using XSL and XML to display data visually.
+This is a Silverlight C# application using XSL and XML to display bloodpressure data visually.
 
-Applicable code:
+#Use cases
+
+On mouseclick:
+- toggle display of 9 borders
+- toggle series results
+- toggle series legends
+
+Views:
 - SilverlightCSharp\Views
-It uses the adjacent [XSL project](/Xsl).
+
+Dependencies: 
+[XSL project](/Xsl).
 
 Application requirements:
 - Visual Studio 2010
