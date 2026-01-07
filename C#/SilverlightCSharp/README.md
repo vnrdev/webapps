@@ -22,7 +22,7 @@ Accuracy use case 3: toggle series legends
 - SilverlightCSharp\Views
 
 ### Dependencies 
-[XSL project](/Xsl).
+[XSL project](/Xsl)
 
 ### Application requirements
 - Visual Studio 2010
