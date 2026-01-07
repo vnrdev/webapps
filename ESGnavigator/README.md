@@ -1,5 +1,13 @@
 The ESG Navigator is an Enterprise Social Governance questionnaire tool written in ReactJS.
 
+### Libraries
+- ReactJS
+- TypeScript
+- TanStackQuery
+- Next.js
+- TailWind
+- IBM Carbon Design
+
 Question
 ![question](Screenshots/large-image.png)
 
@@ -39,10 +47,4 @@ Question type: rating (tablet)
 Question type: y/n
 ![question_yn](Screenshots/question_yn.png)
 
-### Libraries
-- ReactJS
-- TypeScript
-- TanStackQuery
-- Next.js
-- TailWind
-- IBM Carbon Design
+
