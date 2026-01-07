@@ -4,7 +4,7 @@ This is a Silverlight C# application using XSL and XML to display bloodpressure 
 
 On mouseclick:
 Bloodpressure:
-!(/Xsl/Screenshots/Bloodpressure.gif)
+![Bloodpressure](/Xsl/Screenshots/Bloodpressure.gif)
 
 Accuracy use case 1: toggle display of 9 borders
 !(/Xsl/Screenshots/Accuracy%20uc1.gif)
