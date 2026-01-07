@@ -24,7 +24,7 @@ Accuracy use case 3: toggle series legends
 ### Dependencies 
 [XSL project](/Xsl).
 
-### Application requirements:
+### Application requirements
 - Visual Studio 2010
 - Silverlight Developer Runtime
 
