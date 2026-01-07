@@ -30,7 +30,7 @@ You can choose between the two views: Accuracy or Speed.
 - Click precisely on the white text 'Mean Reaction Time'
 - Click precisely on the maroon text 'Mean Reaction Time' 
   - You are then able to see the data points (bulletpoints)
-  - Click once more on hte text and you will see a JavaScript animation where the data points move between two limits
+  - Click once more on the text and you will see a JavaScript animation where the data points move between two limits
 
 ### Requirements
 - Internet Explorer Quirks mode (F12)
