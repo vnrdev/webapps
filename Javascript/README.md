@@ -1,3 +1,11 @@
+# Accuracy and Speed
+
+This is a Silverlight JavaScript project visualizing the charts Accuracy and Speed.
+
+It is a statistical UI using XML as flat db.
+The UI was designed manually with pure JavaScript.
+
+## Use cases
 
 Accuracy use case 1: toggle display of 9 borders
 ![Accuracy use case 1: toggle display of 9 borders](/Xsl/Screenshots/Accuracy%20uc1.gif)
@@ -8,25 +16,23 @@ Accuracy use case 2: toggle series results
 Accuracy use case 3: toggle series legends
 ![Accuracy use case 3: toggle series legends](/Xsl/Screenshots/Accuracy%20uc3.gif)
 
-Vereisten voor applicatie:
-- dient te draaien in Internet Explorer Quirks mode (F12): Internet Explorer 7 (Emulation)
+## Instructions
 
-Dit is een statistische UI dat gebruik maakt van XML als flat file databank.
-De UI werd manueel uitgedacht en uitgetekend met pure Javascript.
+You can choose between the two views: Accuracy or Speed.
 
-Je kunt kiezen uit twee schermen: Accuracy of Speed.
+### Accuracy view
 
-Instructies:
+- Click once on the background in the middle to show all values. Click once more to hide them.
+- Click once on one of the Sum rectangles (Sum 1-20 etc.) to visualize their individual values
 
-Accuracy scherm:
+### Speed view 
 
-- klik éénmaal op de achtergrond in het midden op alle waarden te tonen. Klik nogmaals om ze te verbergen.
+- Click precisely on the white text 'Mean Reaction Time'
+- Click precisely on the maroon text 'Mean REaction Time' 
+  You are then able to see the data points (bulletpoints)
+  - Click once more on hte text and you will see a JavaScript animation where the data points move between two limits
 
-- klik éénmaal op elk van de Sum rechthoeken (Sum 1-20 etc.) om hun individuele waarden te zien te krijgen
-
-Speed scherm: 
-
-- klik precies op de witte tekst 'Mean Reaction Time'
-- klik precies op de bruine tekst 'Mean REaction Time'
-Je krijgt dan datapunten te zien (bolletjes)
-- klik nogmaals op deze tekst en je krijgt een Javascript animatie te zien waarbij de datapunten zich verplaatsen binnen twee limieten.
+### Requirements
+- Internet Explorer Quirks mode (F12)
+- Internet Explorer 7 (emulation)
+  
