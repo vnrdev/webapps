@@ -1,7 +1,10 @@
-Logistieke applicatie om klaslokalen te reserveren en te beheren.
+# Campus Info
 
-Gebruikte technologieën:
+Logistics application to book and manage classrooms. 
 
+![](/screenshots/demo.gif)
+
+### Stack
 - AngularJS
 - HTML5, CSS3, Javascript
-- JSON (als databank)
+- JSON (flat db)
