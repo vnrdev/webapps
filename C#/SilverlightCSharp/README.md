@@ -3,13 +3,16 @@ This is a Silverlight C# application using XSL and XML to display bloodpressure 
 #Use cases
 
 On mouseclick:
-- 
-- 
-- 
+Bloodpressure:
+[Bloodpressure](/Xsl/Screenshots/Bloodpressure.gif)
 
-![Bloodpressure](/Xsl/Screenshots/Bloodpressure.gif)
-![Accuracy use case 1: toggle display of 9 borders](/Xsl/Screenshots/Accuracy%20uc1.gif)
+Accuracy use case 1: toggle display of 9 borders
+[Accuracy use case 1: toggle display of 9 borders](/Xsl/Screenshots/Accuracy%20uc1.gif)
+
+Accuracy use case 2: toggle series results
 ![Accuracy use case 2: toggle series results](/Xsl/Screenshots/Accuracy%20uc2.gif)
+
+Accuracy use case 3: toggle series legends
 ![Accuracy use case 3: toggle series legends](/Xsl/Screenshots/Accuracy%20uc3.gif)
 
 
