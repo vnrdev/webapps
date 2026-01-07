@@ -1,4 +1,4 @@
-The ESG Navigator is an Enterprise Social Governance questionnaire tool.
+The ESG Navigator is an Enterprise Social Governance questionnaire tool written in ReactJS.
 
 Question
 ![question](Screenshots/large-image.png)
