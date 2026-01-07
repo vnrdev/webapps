@@ -35,4 +35,5 @@ You can choose between the two views: Accuracy or Speed.
 ### Requirements
 - Internet Explorer Quirks mode (F12)
 - Internet Explorer 7 (emulation)
+- Silverlight runtime
   
