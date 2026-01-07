@@ -2,7 +2,7 @@
 
 Logistics application to book and manage classrooms. 
 
-![](/screenshots/demo.gif)
+![demo](/screenshots/demo.gif)
 
 ### Stack
 - AngularJS
