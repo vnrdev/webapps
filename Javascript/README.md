@@ -8,7 +8,7 @@ The UI was designed manually with pure JavaScript.
 ## Use cases
 
 Accuracy use case 1: toggle display of 9 borders
-![Accuracy use case 1: toggle display of 9 borders](/Xsl/Screenshots/Accuracy%20uc1.gif)
+![Accuracy use case 1: toggle display of 9 borders](/Screenshots/Accuracy%20uc1.gif)
 
 Accuracy use case 2: toggle series results
 ![Accuracy use case 2: toggle series results](/Xsl/Screenshots/Accuracy%20uc2.gif)
