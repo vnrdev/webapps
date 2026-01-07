@@ -6,7 +6,6 @@ On mouseclick:
 
 Bloodpressure:
 ![Bloodpressure](/Xsl/Screenshots/Bloodpressure.gif)
-
 Accuracy use case 1: toggle display of 9 borders
 ![Accuracy use case 1: toggle display of 9 borders](/Xsl/Screenshots/Accuracy%20uc1.gif)
 
